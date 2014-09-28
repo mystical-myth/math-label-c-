@@ -8,6 +8,12 @@ Use nominator/denominator to create a fraction.<br />
 <br />
 Full examples:<br />
 1. -sqrt- 4/64 -esqrt- = 2/8<br />
-2.<br />
--sqrt- (8 x 8) -esqrt- -n- <br />
+2. <br />
+-sqrt- ( 8 x 8 ) -esqrt- -n- <br />
 -sqrt- 64 -esqrt- = 8
+
+Known Bugs
+==========
+1. (It's not a bug, <s>It's an undocumented feature</s> but It's a malfunction that I'm not going to fix) It's necessary a space for everything (Example below)
+{ [ ( 3 - 4 ) + 8 ] / 9 } = 1
+^ ^ ^ If not separated they will not work.
