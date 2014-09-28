@@ -2,8 +2,8 @@ math-label-c-
 =============
 
 How to draw a expression:<br />
-Use -sqrt- to start a square root and -esqrt- to end it (Example: -sqrt- 64 -esqrt- = 8)<br />
-Use -n- to go in a new line.<br />
+Use <b>-sqrt-</b> to start a square root and <b>-esqrt-</b> to end it (Example: -sqrt- 64 -esqrt- = 8)<br />
+Use <b>-n-</b> to go in a new line.<br />
 Use nominator/denominator to create a fraction.<br />
 <br />
 Full examples:<br />
