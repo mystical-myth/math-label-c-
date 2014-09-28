@@ -14,6 +14,6 @@ Full examples:<br />
 
 Known Bugs
 ==========
-1. (It's not a bug, <s>It's an undocumented feature</s> but It's a malfunction that I'm not going to fix) It's necessary a space for everything (Example below)
-{ [ ( 3 - 4 ) + 8 ] / 9 } = 1
+1. (It's not a bug, <s>It's an undocumented feature</s> but It's a malfunction that I'm not going to fix) It's necessary a space for everything (Example below)<br />
+{ [ ( 3 - 4 ) + 8 ] / 9 } = 1<br />
 ^ ^ ^ If not separated they will not work.
