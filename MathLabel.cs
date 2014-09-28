@@ -59,7 +59,7 @@ namespace MathControls
             }
         }
 
-        [DefaultValue(typeof(Font), "Inconsolata; 11,25pt")]
+        [DefaultValue(typeof(Font), "Consolas; 11,25pt")]
         public Font Font
         {
             get
