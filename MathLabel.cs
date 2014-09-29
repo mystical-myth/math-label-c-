@@ -90,7 +90,7 @@ namespace MathControls
                 BackColor = Parent.BackColor;
            
             Graphics g = e.Graphics;
-            Regex Fraction = new Regex(@"\d+\/\d+");
+            Regex Fraction = new Regex(@".*\/\d+");
 
             int XArrival = 2;
             int SqrtStarted = 0;
