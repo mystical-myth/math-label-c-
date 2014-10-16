@@ -12,70 +12,10 @@ namespace MathControls
 {
     class MathLabel : Control
     {
-        private string _Text;
-        private Color _ForeColor;
-        private Color _BackColor;
-        private Font _Font;
-
-        [DefaultValue("")]
-        public string Text
-        {
-            get
-            {
-                return _Text;
-            }
-            set
-            {
-                _Text = value;
-                Invalidate();
-            }
-        }
-
-        [DefaultValue(typeof(Color), "0; 238; 238")]
-        public Color ForeColor
-        {
-            get
-            {
-                return _ForeColor;
-            }
-            set
-            {
-                _ForeColor = value;
-                Invalidate();
-            }
-        }
-
-        [DefaultValue(typeof(Color), "Transparent")]
-        public Color BackColor
-        {
-            get
-            {
-                return _BackColor;
-            }
-            set
-            {
-                _BackColor = value;
-                Invalidate();
-            }
-        }
-
-        [DefaultValue(typeof(Font), "Consolas; 11,25pt")]
-        public Font Font
-        {
-            get
-            {
-                return _Font;
-            }
-            set
-            {
-                _Font = value;
-                Invalidate();
-            }
-        }
 
         public MathLabel()
         {
-            
+
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -88,14 +28,14 @@ namespace MathControls
 
             if (BackColor == null)
                 BackColor = Parent.BackColor;
-           
+
             Graphics g = e.Graphics;
             Regex Fraction = new Regex(@".*\/\d+");
 
             int XArrival = 2;
             int SqrtStarted = 0;
             int YAugmentate = 0;
-            string[] Ops = _Text.Split(' ');
+            string[] Ops = Text.Split(' ');
 
             foreach (string Op in Ops)
             {
@@ -153,11 +93,11 @@ namespace MathControls
                 }
             }
 
-            
+
             Size = new Size((int)g.ClipBounds.Width, (int)g.ClipBounds.Height);
         }
     }
-	
+
 	class InternalMathUtils
 	{
 		public static int MajorLength(string[] Strings)
